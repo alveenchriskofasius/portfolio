@@ -27,9 +27,9 @@
             'company' => 'PT Kalventis Sinergi Farma',
             'period' => 'Aug 2023 - Aug 2024',
             'highlights' => [
-                'Built and maintained ASP.NET MVC web applications based on business requirements and clean code practices.',
-                'Integrated Mailchimp and Zoom for communication and marketing workflows.',
-                'Optimized SQL queries, stored procedures, testing, debugging, and code review processes.',
+                'Built and maintained ASP.NET MVC web applications following clean code practices.',
+                'Integrated Mailchimp and Zoom for marketing and communication workflows.',
+                'Optimized SQL queries and improved deployment and review processes.',
             ],
         ],
         [
@@ -37,9 +37,9 @@
             'company' => 'PT Coway International Indonesia',
             'period' => 'Jun 2022 - Jun 2023',
             'highlights' => [
-                'Developed ERP systems, APIs, and enterprise applications integrated with mobile apps and external services.',
-                'Built custom APIs for ERPNext, corporate websites, and desktop applications.',
-                'Delivered Careline Dashboard and Cody Manager with testing and production deployment ownership.',
+                'Delivered Careline Dashboard and Cody Manager using ERPNext integrations and desktop apps.',
+                'Built custom APIs and integrated mobile applications with backend services.',
+                'Owned testing and production deployment tasks.',
             ],
         ],
         [
@@ -47,9 +47,9 @@
             'company' => 'Infonet Global Tech',
             'period' => 'Mar 2019 - May 2022',
             'highlights' => [
-                'Developed software applications and reporting solutions from business requirements.',
-                'Resolved critical bugs, including payment-related issues, and improved enterprise user interfaces.',
-                'Supported analysis, implementation, and maintenance for enterprise systems including Gold Trading System.',
+                'Worked on Gold Trading System components and desktop applications.',
+                'Implemented barcode scanning flows and offline persistence for mobile.',
+                'Supported bug fixes and UI improvements across enterprise projects.',
             ],
         ],
     ];
@@ -59,48 +59,55 @@
             'title' => 'Customer 360',
             'company' => 'PT Kalventis Sinergi Farma',
             'period' => 'Aug 2023 – Aug 2024',
+            'image' => 'images/projects/customer-360.svg',
             'summary' => 'Landing page platform with admin for user/role management, campaign pages, and event creation (online, hybrid, live).',
-            'tags' => ['.NET Core', 'Landing Pages', 'Role Management'],
+            'tags' => ['ASP.NET', 'Landing Pages', 'Role Management'],
         ],
         [
             'title' => 'Careline Dashboard',
             'company' => 'PT Coway International Indonesia',
             'period' => 'Jul 2022 – Jun 2023',
+            'image' => 'images/projects/careline-dashboard.svg',
             'summary' => 'Desktop application for Careline: lead registration, FAQ lookup, customer search, and service area checks.',
-            'tags' => ['WPF', 'Integration API', 'SQL Server','ERPNext'],
+            'tags' => ['Desktop App', 'Operations', 'Customer Support'],
         ],
         [
             'title' => 'Cody Manager',
             'company' => 'PT Coway International Indonesia',
             'period' => 'Dec 2022 – Jun 2023',
+            'image' => 'images/projects/cody-manager.svg',
             'summary' => 'Admin tool for Cody Managers: assignments, task sync, material requests, and meeting activity reviews.',
-            'tags' => ['ERPNext', 'SQL Server', 'WPF','Integration API'],
+            'tags' => ['ERPNext', 'Workflow', 'Admin UI'],
         ],
         [
             'title' => 'Coway ERP',
             'company' => 'PT Coway International Indonesia',
             'period' => 'Jun 2022 – Oct 2022',
+            'image' => 'images/projects/coway-erp.svg',
             'summary' => 'ERPNext/Frappe work: APIs, backend fixes, and frontend data customizations.',
-            'tags' => ['Frappe', 'ERPNext', 'Python', 'JavaScript'],
+            'tags' => ['Frappe', 'ERPNext', 'Python'],
         ],
         [
             'title' => 'DST Recruitment',
             'company' => 'PT Coway International Indonesia',
-            'period' => 'Jun 2022 - Jun 2022',
+            'period' => 'Jun 2022',
+            'image' => 'images/projects/dst-recruitment.svg',
             'summary' => 'Recruitment site for the Lead division with application and screening flows.',
-            'tags' => ['HTML', 'CSS', 'JavaScript','PHP'],
+            'tags' => ['Web', 'Recruitment'],
         ],
         [
             'title' => 'Gold Trading System Mobile (Main sub project)',
             'company' => 'Infonet Global Tech',
             'period' => 'Apr 2021 – Nov 2021',
+            'image' => 'images/projects/gold-mobile.svg',
             'summary' => 'Java mobile app for barcode scanning with offline persistence (planned online migration).',
             'tags' => ['Java', 'Mobile', 'Barcode'],
         ],
         [
             'title' => 'Gold Trading System Desktop',
             'company' => 'Infonet Global Tech',
-            'period' => 'Mar 2019 - May 2022',
+            'period' => '2019 - 2022',
+            'image' => 'images/projects/gold-desktop/Login.jpg',
             'summary' => 'Desktop trading system for jewelry transactions with role-based UI and order flows.',
             'tags' => ['C#', 'WPF', 'Desktop Software'],
         ],
@@ -108,22 +115,17 @@
             'title' => 'Appraisal Performance System',
             'company' => 'PT Kalventis Sinergi Farma',
             'period' => '—',
+            'image' => 'images/projects/appraisal.svg',
             'summary' => 'Internal web app for KPI appraisal and employee performance rating workflows.',
-            'tags' => ['.NET Core', 'C#', 'SQL Server'],
+            'tags' => ['Web', 'KPI', 'HR Tools'],
         ],
         [
-            'title' => 'Warehouse Management System',
+            'title' => 'WMS',
             'company' => 'PT Intan Pariwara',
-            'period' => 'Aug 2025 - Sep 2025',
+            'period' => 'Recent',
+            'image' => 'images/projects/wms/login.png',
             'summary' => 'Warehouse workflow for location validation, stock counting, and relabelling operations.',
-            'tags' => ['Next.js', 'Typescript', 'Vue.js'],
-        ],
-        [
-            'title' => 'Talenta Integration',
-            'company' => 'PT Intan Pariwara',
-            'period' => 'Mar 2025 - Aug 2025',
-            'summary' => 'Automated synchronization of employee data between Talenta and ERP.',
-            'tags' => ['Python', 'Fast API', 'System Integration'],
+            'tags' => ['WMS', 'Inventory', 'Mobile Friendly'],
         ],
         [
             'title' => 'Program Sinergi',
@@ -136,24 +138,78 @@
             'title' => 'Oldist Integration',
             'company' => 'PT Intan Pariwara',
             'period' => 'Mar 2025 - Present',
+            'video' => 'video/oldist sync/sync to oldist.mp4',
             'summary' => 'Automated synchronization of customer and order data between ERP to Oldist.',
             'tags' => ['FastAPI', 'Python', 'Mysql'],
         ],
     ];
 
+    // Build gallery array for each project by scanning public folders
+    // include manual folder mappings when project folder name differs from title slug
+    $projectFolderMap = [
+        'Program Sinergi' => 'rabat',
+        'Gold Trading System Desktop' => 'gold-desktop',
+    ];
+
+    foreach ($projects as $idx => $proj) {
+        $gallery = [];
+        if (!empty($proj['image'])) {
+            $gallery[] = $proj['image'];
+        }
+
+        // candidate folders to scan
+        $candidates = [];
+        // slug from title
+        $slug = \Illuminate\Support\Str::slug($proj['title'] ?? '');
+        if ($slug) {
+            $candidates[] = $slug;
+        }
+
+        // title lowercased
+        $titleLower = strtolower($proj['title'] ?? '');
+        if ($titleLower) {
+            $candidates[] = $titleLower;
+        }
+
+        // user-provided mapping
+        if (!empty($projectFolderMap[$proj['title'] ?? ''])) {
+            $candidates[] = $projectFolderMap[$proj['title']];
+        }
+
+        // also include folder matching company or common names
+        if (!empty($proj['company'])) {
+            $candidates[] = \Illuminate\Support\Str::slug($proj['company']);
+        }
+
+        // scan candidates for images
+        foreach (array_unique($candidates) as $folder) {
+            $dir = public_path('images/projects/'.$folder);
+            if (is_dir($dir)) {
+                $files = glob($dir.'/*.{png,jpg,jpeg,webp,svg}', GLOB_BRACE);
+                if ($files) {
+                    foreach ($files as $f) {
+                        $gallery[] = 'images/projects/'.$folder.'/'.basename($f);
+                    }
+                }
+            }
+        }
+
+        $projects[$idx]['gallery'] = array_values(array_unique($gallery));
+    }
+
     $skillGroups = [
         [
             'title' => 'Languages',
-            'items' => ['C#', 'Python', 'Java', 'TypeScript', 'JavaScript'],
+            'items' => ['C#', 'Python', 'Java', 'PHP', 'JavaScript','TypeScript'],
         ],
         [
             'title' => 'Frameworks & Platforms',
-            'items' => ['ASP.NET MVC', 'Laravel', 'Frappe Framework', 'ERPNext', 'React', 'WPF', 'EF Core'],
+            'items' => ['ASP.NET Core', 'Laravel', 'Frappe Framework', 'ERPNext', 'Vue.js', 'Windows Presentation Foundation', 'Next.js'],
         ],
         [
             'title' => 'Databases & Tools',
-            'items' => ['SQL Server', 'MariaDB', 'MySQL', 'REST APIs', 'System Integration', 'Azure DevOps'],
-        ],
+            'items' => ['SQL Server', 'MariaDB', 'MySQL', 'REST APIs', 'git', 'Azure DevOps','Postman', 'Swagger', 'Docker', 'Linux','IIS'],
+        ]
     ];
 
     $softSkills = [
@@ -364,14 +420,47 @@
                     <div class="mt-8 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
                         @foreach ($projects as $project)
                             <article class="project-card rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6">
-                                <p class="text-xs uppercase tracking-[0.26em] text-[var(--color-accent-soft)]">{{ $project['company'] }}</p>
-                                <div class="mt-3 flex flex-col gap-3">
-                                    <h3 class="text-2xl font-semibold text-white">{{ $project['title'] }}</h3>
+                                <div class="flex items-center gap-4">
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.26em] text-[var(--color-accent-soft)]">{{ $project['company'] }}</p>
+                                        <h3 class="mt-3 text-2xl font-semibold text-white">{{ $project['title'] }}</h3>
+                                    </div>
+                                </div>
+
+                                @if (!empty($project['video']))
+                                    <div class="mt-4">
+                                        <video controls class="w-full max-w-sm rounded-md">
+                                            <source src="{{ str_replace(' ', '%20', asset($project['video'])) }}" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                @endif
+
+                                <div class="mt-4">
                                     <span class="inline-flex w-fit rounded-full border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/10 px-3 py-1 text-xs font-semibold text-[var(--color-accent)]">
                                         {{ $project['period'] }}
                                     </span>
+                                    <p class="mt-4 text-sm leading-7 text-white/68">{{ $project['summary'] }}</p>
                                 </div>
-                                <p class="mt-5 text-sm leading-7 text-white/68">{{ $project['summary'] }}</p>
+
+                                @php
+                                    $gallery = $project['gallery'] ?? [];
+                                    $galleryUrls = [];
+                                    foreach ($gallery as $g) {
+                                        $galleryUrls[] = asset($g);
+                                    }
+                                @endphp
+
+                                @if (!empty($galleryUrls))
+                                    <div class="mt-4">
+                                        <div class="grid grid-cols-2 gap-2 w-full max-w-xs">
+                                            @foreach (array_slice($galleryUrls, 0, 6) as $i => $gUrl)
+                                                <img src="{{ $gUrl }}" alt="{{ $project['title'] }}" data-gallery='@json($galleryUrls)' data-index="{{ $i }}" class="h-32 w-full rounded-md object-cover cursor-pointer project-thumb" />
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                @endif
+
                                 <div class="mt-6 flex flex-wrap gap-2">
                                     @foreach ($project['tags'] as $tag)
                                         <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">{{ $tag }}</span>
@@ -469,5 +558,81 @@
                 </section>
             </main>
         </div>
+    
+    <div id="project-lightbox" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70 p-4">
+        <div class="relative mx-auto w-full max-w-3xl">
+            <button id="lb-close" class="absolute right-2 top-2 z-50 rounded-full bg-white/10 px-3 py-1 text-sm">Close</button>
+            <button id="lb-full" class="absolute right-20 top-2 z-50 rounded-full bg-white/10 px-3 py-1 text-sm">⤢</button>
+            <button id="lb-prev" class="absolute left-2 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 px-3 py-1 text-sm">‹</button>
+            <button id="lb-next" class="absolute right-12 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/10 px-3 py-1 text-sm">›</button>
+            <img id="lb-image" src="" alt="Gallery image" class="w-full max-h-[90vh] object-contain rounded-md" />
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            const lightbox = document.getElementById('project-lightbox');
+            const lbImage = document.getElementById('lb-image');
+            const lbClose = document.getElementById('lb-close');
+            const lbPrev = document.getElementById('lb-prev');
+            const lbNext = document.getElementById('lb-next');
+            let currentGallery = [];
+            let currentIndex = 0;
+
+            function openGallery(gallery, index){
+                currentGallery = gallery;
+                currentIndex = index || 0;
+                lbImage.src = currentGallery[currentIndex];
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+            }
+
+            function closeGallery(){
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                lbImage.src = '';
+            }
+
+            function showIndex(i){
+                if(!currentGallery.length) return;
+                currentIndex = (i + currentGallery.length) % currentGallery.length;
+                lbImage.src = currentGallery[currentIndex];
+            }
+
+            document.querySelectorAll('.project-thumb').forEach(el => {
+                el.addEventListener('click', e => {
+                    const gallery = JSON.parse(el.getAttribute('data-gallery') || '[]');
+                    const index = parseInt(el.getAttribute('data-index') || '0', 10);
+                    openGallery(gallery, index);
+                });
+            });
+
+            lbClose.addEventListener('click', closeGallery);
+            lbPrev.addEventListener('click', () => showIndex(currentIndex - 1));
+            lbNext.addEventListener('click', () => showIndex(currentIndex + 1));
+            const lbFull = document.getElementById('lb-full');
+            lbFull.addEventListener('click', () => {
+                const el = document.getElementById('project-lightbox');
+                if (!document.fullscreenElement) {
+                    if (el.requestFullscreen) el.requestFullscreen();
+                } else {
+                    if (document.exitFullscreen) document.exitFullscreen();
+                }
+            });
+
+            // keyboard navigation
+            document.addEventListener('keydown', e => {
+                if(lightbox.classList.contains('hidden')) return;
+                if(e.key === 'Escape') closeGallery();
+                if(e.key === 'ArrowLeft') showIndex(currentIndex - 1);
+                if(e.key === 'ArrowRight') showIndex(currentIndex + 1);
+            });
+
+            // close on overlay click
+            lightbox.addEventListener('click', e => {
+                if(e.target === lightbox) closeGallery();
+            });
+        })();
+    </script>
     </body>
 </html>
