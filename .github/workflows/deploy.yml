@@ -57,6 +57,12 @@ jobs:
       - name: Copy build assets
         run: cp -r public/build dist/build
 
+      - name: Copy images
+        run: '[ -d public/images ] && cp -r public/images dist/images || echo "No images found, skipping"'
+
+      - name: Copy video
+        run: '[ -d public/video ] && cp -r public/video dist/video || echo "No video found, skipping"'
+
       - name: Copy favicon
         run: '[ -f public/favicon.ico ] && cp public/favicon.ico dist/favicon.ico || echo "No favicon found, skipping"'
 
