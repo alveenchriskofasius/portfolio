@@ -107,7 +107,7 @@
             'title' => 'Gold Trading System Desktop',
             'company' => 'Infonet Global Tech',
             'period' => '2019 - 2022',
-            'image' => 'images/projects/gold-desktop/Login.jpg',
+            'image' => 'images/projects/gold-desktop/login.jpg',
             'summary' => 'Desktop trading system for jewelry transactions with role-based UI and order flows.',
             'tags' => ['C#', 'WPF', 'Desktop Software'],
         ],
@@ -138,7 +138,7 @@
             'title' => 'Oldist Integration',
             'company' => 'PT Intan Pariwara',
             'period' => 'Mar 2025 - Present',
-            'video' => 'video/oldist sync/sync to oldist.mp4',
+            'youtube' => 'https://youtu.be/vhS_wGyRv1U',
             'summary' => 'Automated synchronization of customer and order data between ERP to Oldist.',
             'tags' => ['FastAPI', 'Python', 'Mysql'],
         ],
@@ -427,7 +427,21 @@
                                     </div>
                                 </div>
 
-                                @if (!empty($project['video']))
+                                @php
+                                    $youtubeEmbed = null;
+                                    if (!empty($project['youtube'])) {
+                                        preg_match('/(?:youtu\.be\/|v=)([A-Za-z0-9_-]{11})/', $project['youtube'], $m);
+                                        if (!empty($m[1])) {
+                                            $youtubeEmbed = 'https://www.youtube.com/embed/'.$m[1];
+                                        }
+                                    }
+                                @endphp
+
+                                @if (!empty($youtubeEmbed))
+                                    <div class="mt-4">
+                                        <iframe src="{{ $youtubeEmbed }}" class="w-full max-w-sm rounded-md" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                @elseif (!empty($project['video']))
                                     <div class="mt-4">
                                         <video controls class="w-full max-w-sm rounded-md">
                                             <source src="{{ str_replace(' ', '%20', asset($project['video'])) }}" type="video/mp4">
