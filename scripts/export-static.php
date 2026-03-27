@@ -31,8 +31,25 @@ try {
 
 // Replace absolute and full-URL asset paths with relative paths so the
 // static site works regardless of the GitHub Pages sub-path.
-$html = preg_replace('#(href|src)=(["\'])https?://[^/]+/build/#', '$1=$2build/', $html);
-$html = preg_replace('#(href|src)=(["\'])/build/#', '$1=$2build/', $html);
+$appUrl = rtrim(config('app.url'), '/');
+
+// Strip full APP_URL from href/src attributes (images, video, build, etc.)
+$html = preg_replace('#(href|src)=(["\'])' . preg_quote($appUrl, '#') . '/#', '$1=$2', $html);
+
+// Strip JSON-escaped APP_URL inside data attributes (e.g. data-gallery)
+$escapedAppUrl = str_replace('/', '\\/', $appUrl);
+$html = str_replace($escapedAppUrl . '\\/', '', $html);
+
+// Fallback: strip any remaining localhost variants (different port, etc.)
+$html = preg_replace('#(href|src)=(["\'])https?://localhost(:\d+)?/#', '$1=$2', $html);
+$html = preg_replace(
+    '#' . preg_quote('https:\\/\\/localhost', '#') . '(:\d+)?\\\/#',
+    '',
+    $html
+);
+
+// Fallback: convert remaining absolute paths to relative
+$html = preg_replace('#(href|src)=(["\'])/(build|images|video)/#', '$1=$2$3/', $html);
 
 $outputFile = rtrim($outputDir, '/')  .'/index.html';
 
